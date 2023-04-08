@@ -27,8 +27,9 @@
 		</Menu>
 
 
-		<Grid Margin="10,87,10,0" VerticalAlignment="Top" Grid.IsSharedSizeScope="True">
+		<Grid Margin="10,27,10,0" VerticalAlignment="Top" Grid.IsSharedSizeScope="True">
 			<Grid.RowDefinitions>
+				<RowDefinition Height="*"></RowDefinition>
 				<RowDefinition Height="*"></RowDefinition>
 				<RowDefinition Height="*"></RowDefinition>
 			</Grid.RowDefinitions>
@@ -36,7 +37,19 @@
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="*"></ColumnDefinition>
 				</Grid.ColumnDefinitions>
-				<Button Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" IsEnabled="True" Name="btnRandomize" Click="btnRandomize_Click">Randomize!</Button>
+				<Button Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" IsEnabled="True" Name="btnOpenEngageAssets" Click="btnEngageAssetsPath_Click">Open Engage Assets Folder</Button>
+			</Grid>
+			<Grid Grid.Row="1">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Button Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" IsEnabled="True" Name="btnOpenEngageXml" Click="btnEngageXmlPath_Click">Open EngageXml Path</Button>
+			</Grid>
+			<Grid Grid.Row="2">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Button Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" IsEnabled="True" Name="btn" Click="btnRandomize_Click">Randomize!</Button>
 			</Grid>
 		</Grid>
 		
